@@ -1,0 +1,520 @@
+body{
+    margin:0px; 
+    background-color:#808080;
+    color:white;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+     }
+button {
+    border:1px solid white;
+    border-radius: 7px;
+    box-shadow: 0 0 5px, inset 0 0 25px;
+    padding: 10px 40px;
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+
+#gameboard{
+    position: relative;
+    width: 300px;
+    height: 90vh;
+    margin: auto;
+    background-color: #292929;
+    overflow: hidden;
+  }
+
+  .line{
+  	position: absolute;
+  	height: 150px;
+  	width: 8px;
+  	
+  	margin-left: 50%;
+  	background-color: yellow;
+
+  }
+  #line_1{
+  	top: -150px;
+
+  }
+ #line_2{
+  	top: 150px;
+  	
+  }
+  #line_3{
+  	top: 450px;
+  	
+  }
+
+.car{
+    position: absolute;
+    height: 70px;
+    width: 48px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 8px 0px black;
+}
+#car{
+    bottom: 8%;
+    left: 60%;
+    background-color: green;
+}
+
+
+.f_glass{
+  	position: absolute;
+  	height: 20%;
+  	width: 25px;
+  	margin-left: 25%;
+  	top: 10px;
+  	border-radius: 0px 0px 5px 5px  ;
+  	background-color: black;
+
+
+  }
+.b_glass{
+
+  	position: absolute;
+  	height: 20%;
+  	width: 25px;
+  	margin-left: 25%;
+  	margin-top: 98%;
+  	border-radius: 0px 0px 5px 5px  ;
+  	background-color: black;
+
+  }
+
+.f_light_l{
+	position: absolute;
+	height:6px;
+	width: 5px;
+	margin-left:20%;
+	top: -3%;
+	border-radius:  5px 5px 5px 5px ;
+	background-color: wheat;
+
+}
+
+
+
+.f_light_r{
+	position: absolute;
+	height:6px;
+	width: 5px;
+	margin-left: 70%;
+	top: -3%;
+	border-radius:  5px 5px 5px 5px ;
+	background-color: wheat;
+
+}
+.b_light_l{
+  position: absolute;
+  height:6px;
+  width: 5px;
+  margin-left:20%;
+  bottom:-3%;
+  border-radius:  5px 5px 5px 5px ;
+  background-color: wheat;
+
+}
+
+
+
+.b_light_r{
+  position: absolute;
+  height:6px;
+  width: 5px;
+  margin-left: 70%;
+  bottom:-3%;
+  border-radius:  5px 5px 5px 5px ;
+  background-color: wheat;
+
+}
+
+.f_tyer_l{
+	position: absolute;
+	height:10px;
+	width: 5px;
+	margin-left: -10%;
+	top: 10%;
+	border-radius:  5px 0px 0px 5px ;
+	background-color: gray;
+
+
+}
+.f_tyer_r{
+	position: absolute;
+	height:10px;
+	width: 5px;
+	margin-left: 100%;
+	top: 10%;
+	border-radius:  0px 5px 5px 0px ;
+	background-color: gray;
+
+
+}
+
+.b_tyer_l{
+	position: absolute;
+	height:10px;
+	width: 5px;
+	margin-left: -10%;
+	top: 75%;
+	border-radius:  5px 0px 0px 5px ;
+	background-color: gray;
+
+
+}
+.b_tyer_r{
+	position: absolute;
+	height:10px;
+	width: 5px;
+	margin-left: 100%;
+	top: 75%;
+	border-radius:  0px 5px 5px 0px ;
+	background-color: gray;
+
+
+}
+
+
+#car_1{
+	top: -100px;
+ 	left: 65%;
+  background-color: yellow;
+
+  }
+#car_2{
+	top: -250px;
+ 	left: 40%;
+  background-color: red;
+
+
+  }
+#car_3{
+	top: -450px;
+ 	left: 50%;
+  	background-color: blue;
+
+  }
+#car_4{
+  top: -650px;
+  left: 20%;
+  background-color: white;
+
+  }
+
+
+
+
+
+#scorebox{
+	position: relative;
+  margin-top: 35px;
+	margin-left: 50px;
+ 
+	font-size: 25px;
+	background-color: white;
+	color: black;
+	padding: 10px;
+	box-shadow: 4px 4px 0px 1px #E0DBFF;
+  text:20px;
+  height: 300px;
+  width: 150px;
+  align: left;
+  float: left;
+
+}
+#restart_bord{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	
+	font-size: 20px;
+	background-color: wheat;
+	text-align: center;
+	display: none;
+  margin-left: 100px;
+
+  
+
+}
+#restart{
+	border:black;
+	padding: 10px;
+	color: green;
+	margin-top:5px;
+	font-size: 15px;
+  margin-left: 00px;
+  margin-top: 15px;
+  width: 145px;
+  cursor: pointer;  
+
+}
+#small_text{
+  font-size: 10px;
+}
+#board{
+  height: 400px;
+  width: 400px;
+  background-color: green;
+}
+#stop{
+  border:black;
+  padding: 10px;
+  color: green;
+  margin-top:15px;
+  margin-left: 00px;
+  font-size: 15px;
+  text-align: center;
+  width: 145px;
+  cursor: pointer; 
+}
+
+#level{
+  border:black;
+  padding: 10px;
+  color: green;
+  margin-top:15px;
+  font-size: 15px;
+  width: 145px;
+  cursor: pointer; 
+
+}
+
+#low{
+  border:black;
+  padding: 10px;
+  color: green;
+  margin-top:5px;
+  font-size: 15px;
+  margin-left: 00px;
+  margin-top: 15px;
+  width: 145px;
+  cursor: pointer; 
+
+  
+}
+#medium{
+  border:black;
+  padding: 10px;
+  color: green;
+  margin-top:5px;
+  font-size: 15px;
+  margin-left: 00px;
+  margin-top: 15px;
+  width: 145px;
+  cursor: pointer; 
+
+  
+}
+
+
+
+
+
+.btnstart{
+  border:black;
+  padding: 10px;
+  color: green;
+  margin-top:15px;
+  font-size: 15px;
+  width: 145px;
+  cursor: pointer; 
+
+}
+
+#help{
+  border:black;
+  padding: 10px;
+  color: green;
+  margin-top:15px;
+  font-size: 15px;
+  width: 145px;
+  cursor: pointer; 
+
+}
+
+button#mutebtn{
+  background: url(sound.png) no-repeat;
+  boder:none;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+  margin-top: 85vh; 
+}
+
+
+.rider{
+  background-color:  white;
+}
+#left{
+  margin-left: 5px;
+  width: 5px;
+  height: 100%;
+  float: left;
+}
+#right{
+  float: right;
+  margin-left:95px;
+  margin-right: 5px;
+  width: 5px;
+  height: 100%;
+}
+
+
+#info {
+    display:none;
+    position: relative;
+    margin-top: -160px;
+    margin-left: 150px;
+    width: 375px;
+    border: 3px solid lightblue;
+    background-color: white;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    
+    font-size: 0.1em;
+    color: black;
+    float: left;
+    
+   
+}
+
+#diff {
+    
+    display:none;
+    position: relative;
+    margin-top: -160px;
+    margin-left: 150px;
+    width: 170px;
+    border: 3px solid lightblue;
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+    
+    font-size: 0.2em;
+    color: black;
+    float: left;
+}
+
+
+
+/*truck css */
+
+
+
+#truck{
+      
+      left: 10%;
+      height: 80px;
+      width: 50px;
+      background-color: #B4B4B1;
+ }
+
+
+  #head{
+    margin-top:50px; 
+    position: absolute;
+    height: 20px;
+    width: 30px;
+    background-color:#B4B4B1;
+    margin-left: 10px;
+    border-radius: 0px  0px 4px 4px;
+
+  } 
+
+ 
+
+
+#truck_b{
+      margin-top: 2px;
+      margin-left: 2px;
+      margin-bottom: 2px;
+      margin-top: 4px;
+      height: 76px;
+    width: 46px;
+    background-color: #A09C9D;
+ }
+#truck_bb{
+      margin-top: 4px;
+      margin-left: 2px;
+      margin-bottom: 2px;
+      margin-top: 2px;
+      height: 70px;
+    width: 40px;
+    background-color: #9CA09F;
+ }
+
+.tline{
+  height: 65px;
+  width:3px;
+  background-color: #A08C83;
+
+}
+#l1{
+  float: left;
+  margin: 5px;
+
+}
+
+#l2{
+  float: left;
+  margin: 5px;
+
+}
+#l3{
+  float: left;
+  margin: 5px;
+}
+.tyer{
+  height: 10px;
+  width: 5px;
+  background-color: gray;
+}
+#f_l{
+  margin-top: -12px; 
+    margin-left:  -4px;
+    border-radius:  5px 0px 0px 5px ;
+
+}
+#f_r{
+  margin-top: -14px; 
+    margin-left: 28px;
+    border-radius: 0px  5px 5px 0px ;
+
+}
+#b_l{
+    margin-top: -12px; 
+    margin-left:  -4px;
+    border-radius:  5px 0px 0px 5px ;
+
+}
+#b_r{
+    margin-top: -55px; 
+    margin-left: 48px;
+    border-radius: 0px  5px 5px 0px ;
+
+}
+#glass{
+  height: 7px;
+  width: 22px;
+  background-color: black;
+  margin-top:1px;
+  margin-left: 3px; 
+  border-radius: 0px  0px 4px 4px;
+
+
+}
+#roof{
+  margin-top:0px;
+  margin-left: 2px; 
+  height: 10px;
+  width: 25px;
+  background-color: #283E31;
+  border-radius: 2px  2px 2px 2px;
+
+}

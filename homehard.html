@@ -1,0 +1,169 @@
+<!--DOCTYPE html-->
+<html >
+<head>
+	<title>car game</title>
+	
+    <link rel="stylesheet" type="text/css" href="stylehard.css"/>
+</head> 
+<body>
+<div id ="board "><b>
+    <div id="scorebox" align="left">Score: <span id="score"> 0</span></b>
+
+    	 <button  id="restart"  > START </button>
+		 <button id ="level" onclick="diffi()">HARD</button>
+    <div id="diff">
+     		<a href="homelow.html">
+           <button  id="low">LOW</button></a><br>
+           <a href="medium.html"> 
+            <button  id="medium">MEDIUM</button><br></a>
+            <br>
+            
+    </div>   
+		<br>
+		<button id ="help" onclick="help()" >HELP </button>
+         <div id="info"><b>
+         	 1.Move car by arrow key (← ↑ → ↓).<br>
+   			 2.Choose difficulty click medium button.<br>
+   			 3.Click Start button for restart.<br>
+   			 4.Click Quit button for quit game.</b>
+         </div>
+         <a href="index.html"><button id ="stop"> QUIT </button>
+		<br></a>
+
+		<br>
+
+	</div>
+</div>
+
+
+
+
+
+<div id="gameboard">
+	<div id ="line_1" class="line"></div>
+	<div id ="line_2" class="line"></div>
+	<div id ="line_3" class="line"></div>
+
+
+	<div id="left" class="rider"></div>
+	<div id="right" class="rider"></div>
+
+
+	<div id="car" class="car">
+		<div class="f_glass"></div>
+		<div class="b_glass"></div>
+		<div class="f_light_r"></div>
+		<div class="f_light_l"></div>
+		<div class="b_light_r"></div>
+		<div class="b_light_l"></div>
+		<div class="f_tyer_l"></div>
+		<div class="f_tyer_r"></div>
+		<div class="b_tyer_l"></div>
+		<div class="b_tyer_r"></div>
+		<div class="b_light_r"></div>
+		<div class="b_light_l"></div>
+	</div>
+
+
+	<div id="car_1" class="car"> 
+		<div class="f_glass"></div>
+		<div class="b_glass"></div>
+		<div class="f_light_r"></div>
+		<div class="f_light_l"></div>
+		<div class="b_light_r"></div>
+		<div class="b_light_l"></div>
+		<div class="f_tyer_l"></div>
+		<div class="f_tyer_r"></div>
+		<div class="b_tyer_l"></div>
+		<div class="b_tyer_r"></div>
+		<div class="b_light_r"></div>
+		<div class="b_light_l"></div>
+	</div>
+	<div id="car_2" class="car"> 
+		<div class="f_glass"></div>
+		<div class="b_glass"></div>
+		<div class="f_light_r"></div>
+		<div class="f_light_l"></div>
+		<div class="b_light_r"></div>
+		<div class="b_light_l"></div>
+		<div class="f_tyer_l"></div>
+		<div class="f_tyer_r"></div>
+		<div class="b_tyer_l"></div>
+		<div class="b_tyer_r"></div>
+		<div class="b_light_r"></div>
+		<div class="b_light_l"></div>
+	</div>
+	<div id="car_3" class="car"> 
+		<div class="f_glass"></div>
+		<div class="b_glass"></div>
+		<div class="f_light_r"></div>
+		<div class="f_light_l"></div>
+		<div class="b_light_r"></div>
+		<div class="b_light_l"></div>
+		<div class="f_tyer_l"></div>
+		<div class="f_tyer_r"></div>
+		<div class="b_tyer_l"></div>
+		<div class="b_tyer_r"></div>
+		<div class="b_light_r"></div>
+		<div class="b_light_l"></div>
+	</div>
+
+
+	<div id="car_4" class="car"> 
+		<div class="f_glass"></div>
+		<div class="b_glass"></div>
+		<div class="f_light_r"></div>
+		<div class="f_light_l"></div>
+		<div class="b_light_r"></div>
+		<div class="b_light_l"></div>
+		<div class="f_tyer_l"></div>
+		<div class="f_tyer_r"></div>
+		<div class="b_tyer_l"></div>
+		<div class="b_tyer_r"></div>
+		<div class="b_light_r"></div>
+		<div class="b_light_l"></div>
+	</div>
+
+
+
+	
+<!--truck Environment-->
+<div class="car" id="truck">
+ 
+ 	<div id="truck_b">
+ 		 <div id="truck_bb">
+ 			<div class="tline" id="l1"></div>
+ 			<div class="tline" id="l2"></div>
+ 			<div class="tline" id="l3"></div>
+ 		 </div> 		
+ 	</div>
+
+ 	
+ 	<div class="tyer" id="b_r"></div>
+ 	<div class="tyer" id="b_l"></div>	
+    <div id="head" >
+ 		<div id="roof"></div>
+ 		<div id="glass"></div>
+ 		<div class="tyer" id="f_r"></div>
+ 	    <div class="tyer" id="f_l"></div>
+ 	</div>
+ 	
+</div>
+
+
+<button id="mutebtn"> </button>
+
+
+</div>
+
+
+ 
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="scripthard.js"></script>
+
+
+</body>
+</html>
